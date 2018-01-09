@@ -1,0 +1,35 @@
+<html>
+
+<body>
+
+</br>
+<center><font size=4px> <b> 3rd SOUTH INDIAN MUAY THAI CHAMPIONSHIP AND </br>
+1st MBAI INDIA NATIONAL MUAY THAI PRO TITLE BELT</br>
+CHAMPIONSHIP 2018</br></font></b>
+<font size=2px>January 26,27 & 28 - Muncipal Stadium, Neyattinkara Town, Trivandrum, Kerala </br></font>
+</br>
+
+<table border="1" style width="100%">
+
+<tr>
+ <th> Serial No </th>
+ <th> Name </th>
+ <th> State </th>
+ <th> Weight </th>
+ <th> Age </th>
+ <th> Category </th>
+</tr>
+
+{%for a in list%}
+<tr>
+  <td align="center"> {{a.id}}</td>
+  <td align="center"> {{a.name}}</td>
+  <td align="center"> {{a.state}}</td>
+  <td align="center"> {{a.weight}}</td>
+  <td align="center"> {{a.age}}</td>
+  <td align="center"> {{a.category}}</td>
+</tr>
+{%endfor%}
+
+</div>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	 <title>Filter</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="index_styles.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+</br>
+<center><font size=4px> <b> 3rd SOUTH INDIAN MUAY THAI CHAMPIONSHIP AND </br>
+1st MBAI INDIA NATIONAL MUAY THAI PRO TITLE BELT</br>
+CHAMPIONSHIP 2018</br></font></b>
+<font size=2px>January 26,27 & 28 - Muncipal Stadium, Neyattinkara Town, Trivandrum, Kerala </br></font>
+</br>
+
+			<form method='POST' action=''>
+
+
+						{%csrf_token%}
+			<center>
+			<table class="table table-condensed">
+
+
+					<tr>
+
+						<td><center><label>Category : </label></td>
+						<td>{{form.category}}</td>
+
+					</tr>
+
+					<tr>
+
+						<td><center><label>Sex : </label></td>
+						<td>{{form.sex}}</td>
+
+					</tr>
+
+
+					<tr>
+
+						<td><center><label>Weight Category : </label></td>
+						<td>{{form.weight_cat}}</td>
+
+					</tr>
+
+					<tr>
+
+						<td><center><label>Minimum Weight : </label></td>
+						<td>{{form.weight_min}}</td>
+
+					</tr>
+
+
+					<tr>
+						<td><center><label>Maximum Weight : </label></td>
+						<td>{{form.weight_max}}</td>
+
+					</tr>
+
+			</table>
+			</center>
+			<center><input class="btn btn-primary" type='submit' value='Generate'></center>
+
+			</form>
+	
+
+</body>
+<center>
+</html>
+
