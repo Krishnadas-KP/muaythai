@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body background="/static/img/bg.jpeg">
+<body background="{%static 'img/bg.jpeg'%}">
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -47,7 +48,7 @@
                
 
                <div class="theme-table-image">
-                 <img src="/static/img/mbai-championship.jpeg">
+                 <img src="{%static 'img/mbai-championship.jpeg' %}">
                </div>
 
 
@@ -58,11 +59,11 @@
               <div class="container" style="width: 100%;">
 
                   <div class="theme-table-image col-sm-6">
-                     <img src="/static/img/mbai_logo.jpeg" height = 200px>
+                     <img src="{%static 'img/logo.jpeg' %}" height = 200px>
                    </div>
 
                    <div class="theme-table-image col-sm-6">
-                     <img src="/static/img/mbai_kerala_logo.jpeg" height = 200px>
+                     <img src="{%static 'img/mbai_kerala_logo.jpeg' %}" height = 200px>
                    </div>
 
               </div>

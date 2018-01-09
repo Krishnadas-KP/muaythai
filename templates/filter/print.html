@@ -1,8 +1,9 @@
+{%load static%}
 <html>
 <head>
 <style>
 body {
-    background-image: url("/static/img/bg.png");
+    background-image: url("{%static 'img/bg.jpeg' %}");
     background-repeat: no-repeat;
     background-position: center top;
     padding-top: 50px;
@@ -15,10 +16,9 @@ body {
 CHAMPIONSHIP 2018</br></font></b>
 <font size=2px>January 26,27 & 28 - Muncipal Stadium, Neyattinkara Town, Trivandrum, Kerala </br></font>
 
-
+<b><font size=3px>{{category}}</b></font>
 </center>
-<a titlt="print screen" alt="print screen" 
-onclick="window.print();"target="_blank" style="cursor:pointer;">Print</a>
+
 <div>
 <table border="1" style width="100%">
 
@@ -26,18 +26,40 @@ onclick="window.print();"target="_blank" style="cursor:pointer;">Print</a>
  <th> S. No </th>
  <th> Name </th>
  <th> State </th>
- <th> Phone Number  </th>
+ <th> Club </th>
+ <th> Sex </th>
+ <th> Age </th>
+ <th> Weight </th>
 </tr>
 
-{%for a in ref%}
+{%for a in student%}
 <tr>
   <td align="center"> {{a.id}}</td>
   <td align="center">{{a.name}}</td>
   <td align="center">{{a.state}}</td>
-  <td align="center">{{a.phone}}</td>
+  <td align="center">{{a.club}}</td>
+  <td align="center"> {{a.sex}}</td>
+  <td align="center">{{a.age}}</td>
+  <td align="center">{{a.weight}}</td>
+</tr>
+{%endfor%}
+<tr>
+</tr>
+<tr>
+</tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
 </tr>
 
+<tr>
+  <td colspan="3" align="right">Approved by,</td>
+  <td colspan="4" align="center"> </td>
+</div>
+<a titlt="print screen" alt="print screen" 
+onclick="window.print();"target="_blank" style="cursor:pointer;">Print</a>
+<body>
 
-</body>
 
-{%endfor%}
