@@ -6,12 +6,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="index_styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body background="{%static 'img/bg.jpeg'%}">
+<body background="{%static 'home/img/bg.jpeg' %}">
+
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -19,7 +21,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">MBAI</a>
     </div>
@@ -39,16 +41,16 @@
     </div>
   </div>
 </nav>
-  
-<div class="container-fluid text-center">    
+
+<div class="container-fluid text-center">
   <div class="row content">
-    
+
               <div class="container">
 
-               
+
 
                <div class="theme-table-image">
-                 <img src="{%static 'img/mbai-championship.jpeg' %}">
+                 <img src="{%static 'home/img/mbai-championship.jpeg' %}">
                </div>
 
 
@@ -59,29 +61,29 @@
               <div class="container" style="width: 100%;">
 
                   <div class="theme-table-image col-sm-6">
-                     <img src="{%static 'img/logo.jpeg' %}" height = 200px>
+                     <img src="{%static 'home/img/mbai_logo.jpeg' %}" height = 200px>
                    </div>
 
                    <div class="theme-table-image col-sm-6">
-                     <img src="{%static 'img/mbai_kerala_logo.jpeg' %}" height = 200px>
+                     <img src="{%static 'home/img/mbai_kerala_logo.jpeg' %}" height = 200px>
                    </div>
 
               </div>
-  
+
     </div>
   </div>
 
             <div class="container text-center" style="width: 25%;">
-              
+
                     <a href="/admin/Database/student/add/" class="btn btn-lg btn-success btn-block">Add Fighter</a>
                     <a href="/admin/Database/student/" class="btn btn-lg btn-danger btn-block">Edit/Remove Fighter</a>
                     <a href="/admin/Database/referee/add" class="btn btn-lg btn-primary btn-block">Add Referee/Judge</a>
                     <a href="/list" class="btn btn-lg btn-info btn-block">List</a>
                     <a href="/filter" class="btn btn-lg btn-primary btn-block">Filter</a>
                     <a href="/filter/referee/" class="btn btn-lg btn-success btn-block">Referee/Judges</a>
-                   
+
             </div>
-        
+
    </br>
 
 </body>

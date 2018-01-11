@@ -5,7 +5,7 @@ def calculate_age(d):
     today = date.today()
     age= today.year - d.year - ((today.month, today.day) < (d.month, d.day))
     return age
-    
+
 # Category 1 : Sub-junior 10-11
 # Category 2 : Sub-junior 12-13
 # Category 3 : Junior 14-15
@@ -17,7 +17,9 @@ def index(request):
    	date=i.dob
    	cat=0
    	age=calculate_age(date)
-   	if age==10 or age==11 :
+   	if age<10 :
+   	     cat=0
+   	elif age==10 or age==11 :
    	     cat=1
    	elif age==12 or age==13 :
    	     cat=2
@@ -25,8 +27,10 @@ def index(request):
    	     cat=3
    	elif age==16 or age==17 :
    	     cat=4
-   	elif age>=18 or age<=37 :
+   	elif age>=18 and age<=37 :
    	     cat=5
+   	elif age>37 :
+   	     cat=6
    	q=get_object_or_404(Student,id=i.id)
    	q.age=age
    	q.category=cat
